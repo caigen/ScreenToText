@@ -10,6 +10,6 @@
 
   <Grid Margin="0,0,0,0">
     <Image x:Name="CapturedImage" HorizontalAlignment="Left" Height="400" Margin="0,0,0,0" VerticalAlignment="Top" Width="400"/>
-    <TextBox x:Name="CapturedText" HorizontalAlignment="Left" Margin="400,0,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Height="400" Width="400"/>
+    <TextBox x:Name="CapturedText" HorizontalAlignment="Left" Margin="400,0,0,0" Text="Win + Shift + S" TextWrapping="Wrap" VerticalAlignment="Top" Height="400" Width="400"/>
   </Grid>
 </Page>
