@@ -9,16 +9,16 @@
   IgnorableNamespaces="uap mp iot uap6">
 
   <Identity
-    Name="7244479b-4dd4-40be-83d6-045f1706e7ec"
-    Publisher="CN=gencai"
+    Name="6758caigen.201651A0C6721"
+    Publisher="CN=07708460-565D-4FD3-A5B6-794971C7C898"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="7244479b-4dd4-40be-83d6-045f1706e7ec" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="88c30045-0071-4fd1-8512-8c997d87c5f1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>ClipboardOCR</DisplayName>
-    <PublisherDisplayName>gencai</PublisherDisplayName>
-    <Logo>Assets\StoreLogo.png</Logo>
+    <PublisherDisplayName>caigen</PublisherDisplayName>
+    <Logo>Assets\ClipboardOCRStoreLogo.png</Logo>
   </Properties>
 
   <Dependencies>
@@ -35,12 +35,17 @@
       EntryPoint="ScreenToText.App">
       <uap:VisualElements
         DisplayName="ClipboardOCR"
-        Square150x150Logo="Assets\Square150x150Logo.png"
-        Square44x44Logo="Assets\Square44x44Logo.png"
+        Square150x150Logo="Assets\ClipboardOCRSquare150x150Logo.png"
+        Square44x44Logo="Assets\ClipboardOCRSquare44x44Logo.png"
         Description="ScreenToText"
         BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:DefaultTile Wide310x150Logo="Assets\ClipboardOCRWide310x150Logo.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo"/>
+            <uap:ShowOn Tile="wide310x150Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile >
+        <uap:SplashScreen Image="Assets\ClipboardOCRSplashScreen.png" />
       </uap:VisualElements>
     </Application>
   </Applications>
