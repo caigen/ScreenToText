@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Threading.Tasks;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Globalization;
 using Windows.Graphics.Imaging;
@@ -24,35 +25,7 @@ namespace ScreenToText
             this.InitializeComponent();
         }
 
-        public static void Snip()
-        {
-            string win10 = "C:\\Windows\\System32\\SnippingTool.exe";
-            string win11 = "C:\\Windows.old\\Windows\\System32\\SnippingTool.exe";
-
-            string command = "SnippingTool.exe";
-            if (File.Exists(win10))
-            {
-                command = $"{win10} /clip";
-            }
-            else if (File.Exists(win11))
-            {
-                command = $"{win11} /clip";
-            }
-
-            var startInfo = new ProcessStartInfo
-            {
-                FileName = "cmd.exe",
-                Arguments = "/C " + command,
-                WindowStyle = ProcessWindowStyle.Hidden,
-                CreateNoWindow = true,
-                UseShellExecute = false
-            };
-
-            Process process = Process.Start(startInfo);
-            process.WaitForExit();
-        }
-
-        async private void Button_Click(object sender, RoutedEventArgs e)
+        public async Task ClipboardOCR()
         {
             DataPackageView dataPackageView = Clipboard.GetContent();
             if (dataPackageView.Contains(StandardDataFormats.Bitmap))
@@ -84,9 +57,12 @@ namespace ScreenToText
                         }
                     }
                 }
-
-
             }
+        }
+
+        private async void Page_GotFocus(object sender, RoutedEventArgs e)
+        {
+            await ClipboardOCR();
         }
     }
 }

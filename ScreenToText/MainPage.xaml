@@ -6,11 +6,10 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="265" Width="410">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="800" Height="400" GotFocus="Page_GotFocus">
 
-  <Grid Margin="0,0,5,11">
-    <Button Content="Button" Margin="4,4,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-    <Image x:Name="CapturedImage" HorizontalAlignment="Left" Height="200" Margin="4,40,0,0" VerticalAlignment="Top" Width="200"/>
-    <TextBox x:Name="CapturedText" HorizontalAlignment="Left" Margin="200,40,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Height="200" Width="200"/>
+  <Grid Margin="0,0,0,0">
+    <Image x:Name="CapturedImage" HorizontalAlignment="Left" Height="400" Margin="0,0,0,0" VerticalAlignment="Top" Width="400"/>
+    <TextBox x:Name="CapturedText" HorizontalAlignment="Left" Margin="400,0,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Height="400" Width="400"/>
   </Grid>
 </Page>
