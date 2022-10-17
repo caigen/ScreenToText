@@ -11,7 +11,7 @@
   <Identity
     Name="6758caigen.201651A0C6721"
     Publisher="CN=07708460-565D-4FD3-A5B6-794971C7C898"
-    Version="1.0.0.0" />
+    Version="1.0.1.0" />
 
   <mp:PhoneIdentity PhoneProductId="88c30045-0071-4fd1-8512-8c997d87c5f1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
